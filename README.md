@@ -32,7 +32,7 @@ Einstieg
 
 ### Das Markdown-Grundgerüst
 
-Das [Markdown][]-Grundgerüst bietet eine ideale Copy-Paste-Grundlage für das Schreiben eigener Markdown-Dokumente. Mit einem Markdown-Viewer [Plugin][] z.B. für den Firefox Internet-Browser lassen sich Markdown-Dokumente noch schöner darstellen. Weitere Informationen zu [Markdown gibt es auch auf auf Wikipedia][Wiki].
+Das [Markdown][]-Grundgerüst unter `./templates/basic` bietet eine ideale Copy-Paste-Grundlage für das Schreiben eigener Markdown-Dokumente. Mit einem Markdown-Viewer [Plugin][] z.B. für den Firefox Internet-Browser lassen sich Markdown-Dokumente noch schöner darstellen. Weitere Informationen zu [Markdown gibt es auch auf auf Wikipedia][mdw].
 
 Das [Markdown][]-Grundgerüst:
 
