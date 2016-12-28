@@ -22,7 +22,7 @@ Markdown-Syntax von markdown.de
 
 Von <xd23fe39@yahoo.de>
 
-Hier geht es zur lokalen Kopie der [Markdown-Syntax][20131215-markdown-syntax_v6.txt].
+Hier geht es zur lokalen Kopie der [Markdown-Syntax](20131215-markdown-syntax_v6.txt).
 
 Die Markdown-Syntax Anleitung ist eine Kopie von http://markdown.de/ und werden hier unverändert übernommen.
 
