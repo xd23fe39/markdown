@@ -1,11 +1,20 @@
+
+<!-- Referenzen -->
+
+[Logo]: ./res/md.png "Markdown-Logo"
+[Markdown]: https://daringfireball.net/projects/markdown/ "Markdown is a text-to-HTML conversion tool for web writers."
+[Plugin]: https://addons.mozilla.org/de/firefox/addon/markdown-viewer/ "Markdown Viewer Plugin for Firefox"
+[Syntax]: http://markdown.de/ "Die deutsche Markdown-Referenz."
+
+<!-- Kopfzeile -->
+
+[mdw]: https://de.wikipedia.org/wiki/Markdown "Markdown auf Wikipedia"
+
 *Version 1.0 (2016.12.28). Dieses Dokument ist ein [Markdown-Dokument][mdw]. Weitere Informationen zu Markdown
 finden Sie auf der [Markdown-Homepage][Markdown] oder in deutscher Sprache auf
 [markdown.de][Syntax]. Dieses Dokument wurde vom Autor primär zur Eigennutzung erstellt.*
 
-[mdw]: https://de.wikipedia.org/wiki/Markdown "Markdown auf Wikipedia"
 
-
-* * *
 
 Markdown-Syntax von markdown.de
 ===============================
@@ -16,17 +25,6 @@ Von <xd23fe39@yahoo.de>
 Hier geht es zur lokalen Kopie der [Markdown-Syntax][20131215-markdown-syntax_v6.txt].
 
 Die Markdown-Syntax Anleitung ist eine Kopie von http://markdown.de/ und werden hier unverändert übernommen.
-
-
-* * *
-
-
-
-<!-- Referenzen -->
-[Logo]: ./res/md.png "Markdown-Logo"
-[Markdown]: https://daringfireball.net/projects/markdown/ "Markdown is a text-to-HTML conversion tool for web writers."
-[Plugin]: https://addons.mozilla.org/de/firefox/addon/markdown-viewer/ "Markdown Viewer Plugin for Firefox"
-[Syntax]: http://markdown.de/ "Die deutsche Markdown-Referenz."
 
 
 <!-- Einfacher Haftungsausschluss -->

@@ -1,10 +1,18 @@
+
+<!-- Referenzen -->
+
+[Logo]: ./res/md.png "Markdown-Logo"
+[Markdown]: https://daringfireball.net/projects/markdown/ "Markdown is a text-to-HTML conversion tool for web writers."
+[Plugin]: https://addons.mozilla.org/de/firefox/addon/markdown-viewer/ "Markdown Viewer Plugin for Firefox"
+[Syntax]: http://markdown.de/ "Die deutsche Markdown-Referenz."
+
 <!-- Kopfzeile -->
+
+[mdw]: https://de.wikipedia.org/wiki/Markdown "Markdown auf Wikipedia"
 
 *Version 1.0 (2016.12.28). Dieses Dokument ist ein [Markdown-Dokument][mdw]. Weitere Informationen zu Markdown
 finden Sie auf der [Markdown-Homepage][Markdown] oder in deutscher Sprache auf
 [markdown.de][Syntax]. Dieses Dokument wurde vom Autor primär zur Eigennutzung erstellt.*
-
-* * *
 
 
 <!-- Markdown-Content -->
@@ -96,13 +104,6 @@ Beispiel:
 
 ![](./md.png "Markdown-Logo")
 
-
-<!-- ============================================================== -->
-<!-- Referenzen -->
-[Logo]: ./md.png "Markdown-Logo"
-[Markdown]: https://daringfireball.net/projects/markdown/ "Markdown is a text-to-HTML conversion tool for web writers."
-[Plugin]: https://addons.mozilla.org/de/firefox/addon/markdown-viewer/ "Markdown Viewer Plugin for Firefox"
-[Wiki]: https://de.wikipedia.org/wiki/Markdown
 
 
 <!-- Einfacher Haftungsausschluss -->
