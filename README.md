@@ -14,6 +14,7 @@
 finden Sie auf der [Markdown-Homepage][Markdown] oder in deutscher Sprache auf
 [markdown.de][Syntax]. Dieses Dokument wurde vom Autor primär zur Eigennutzung erstellt.*
 
+* * *
 
 <!-- Markdown-Content -->
 
@@ -92,17 +93,17 @@ Einbinden von Bildern
 ----------------------
 
 ```
-[Logo]: ./md.png "Markdown-Logo"
+[Logo]: ./res/md.png "Markdown-Logo"
 ```
 
 ```
 ![Markdown-Image][Logo]
-![Markdown-Image](./md.png "Markdown-Logo")
+![Markdown-Image](./res/md.png "Markdown-Logo")
 ```
 
 Beispiel:
 
-![](./md.png "Markdown-Logo")
+![Markdown-Image][Logo]
 
 
 
