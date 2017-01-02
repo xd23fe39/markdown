@@ -14,7 +14,6 @@ Markdown Basic Template
 Von <xd23fe39@yahoo.de>
 
 
-
 * * *
 
 Hauptüberschrift (Ebene 2)

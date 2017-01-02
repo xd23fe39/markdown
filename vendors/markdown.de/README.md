@@ -5,7 +5,6 @@
 [Markdown]: https://daringfireball.net/projects/markdown/ "Markdown is a text-to-HTML conversion tool for web writers."
 [Plugin]: https://addons.mozilla.org/de/firefox/addon/markdown-viewer/ "Markdown Viewer Plugin for Firefox"
 [Syntax]: http://markdown.de/ "Die deutsche Markdown-Referenz."
-[css]: https://gist.github.com/killercup "Pascal Hertleif - pandoc.css"
 
 <!-- Kopfzeile -->
 
@@ -15,35 +14,17 @@
 finden Sie auf der [Markdown-Homepage][Markdown] oder in deutscher Sprache auf
 [markdown.de][Syntax]. Dieses Dokument wurde vom Autor primär zur Eigennutzung erstellt.*
 
-* * *
 
 
-<!-- Markdown-Content -->
+Markdown-Syntax von markdown.de
+===============================
+![Image-Alternate-Text][Logo]
 
-MARKDOWN Helper Tool (mdhelper)
-===============================================
+Von <xd23fe39@yahoo.de>
 
-by XD23FE39 on http://github.com/xd23fe39/markdown
+Die Markdown-Syntax Anleitung ist eine Kopie von http://markdown.de/ und wird hier unverändert übernommen.
 
-* * *
-
-Aufruf
---------------
-
-Das MARKDOWN Helper Tool `mdhelper` ist ein `bash`-Script zur einfachen Verwaltung von
-Markdown Dokumenten und der Konvertierung via `pandoc` zu HTML.
-
-```
-MARKDOWN Helper (mdhelper) Version 1.0
-
-  Usage: mdhelper init|status|build
-
-  Document converter tool: /usr/bin/pandoc
-```
-
-
-Weitere Informationen finden Sie unter [`/docs`](/docs/README.md).
-
+Kopie der Markdown-Syntaxbeschreibung von [markdown.de](20131215-markdown-syntax_v6.txt).
 
 <!-- Einfacher Haftungsausschluss -->
 

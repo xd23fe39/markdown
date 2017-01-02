@@ -22,7 +22,9 @@ finden Sie auf der [Markdown-Homepage][Markdown] oder in deutscher Sprache auf
 
 MARKDOWN Helper Tool (mdhelper)
 ===============================================
+![Markdown-Logo][Logo]
 
+Version 1.0 (2016.12.31)
 by XD23FE39 on http://github.com/xd23fe39/markdown
 
 * * *
@@ -41,8 +43,18 @@ MARKDOWN Helper (mdhelper) Version 1.0
   Document converter tool: /usr/bin/pandoc
 ```
 
+### Ein einfacher Workflow mit `mdhelper`
 
-Weitere Informationen finden Sie unter [`/docs`](/docs/README.md).
+```
+mkdir ./docs
+cd ./docs
+mdhelper init
+mdhelper build
+```
+
+Siehe auch:
+
+* [First Steps](first_steps.md)
 
 
 <!-- Einfacher Haftungsausschluss -->

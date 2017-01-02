@@ -43,7 +43,7 @@ function priv_usage {
   echo
   echo "MARKDOWN Helper Version 1.0"
   echo
-  echo "  Usage: markdown-helper init|status|build"
+  echo "  Usage: mdhelper init|status|build"
   if [ -x "$PANDOC_BIN" ]; then
     echo; echo "  Document converter tool: $PANDOC_BIN"
   fi
@@ -54,6 +54,7 @@ function priv_usage {
 function priv_build {
   echo; echo "Build HTML Output:"
   priv_dirinfo
+  # Pascal Hertleif is author of pandoc.css: thanx for puplishing!
   $PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/pandoc.css" $1 -o "$CURRENT_DIR/html/`basename $1`.html"
 }
 
