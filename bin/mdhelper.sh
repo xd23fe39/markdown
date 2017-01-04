@@ -35,6 +35,9 @@ function priv_init {
   echo; echo "Initialize current directory:"
   priv_dirinfo
   cp -R $MDT_TEMPLATES/basic/* $CURRENT_DIR
+  cp -R $MDT_TEMPLATES/basic/res $CURRENT_DIR/docs/res
+  cp -R $MDT_TEMPLATES/basic/res $CURRENT_DIR/html/res
+  cp -R $MDT_TEMPLATES/basic/.gitignore $CURRENT_DIR/
   echo; echo "Completed!"
   exit 0
 }
@@ -54,13 +57,17 @@ function priv_usage {
 function priv_build {
   echo; echo "Build HTML Output:"
   priv_dirinfo
-	
+
+  # Kopiere zentrales Ressource-Verzeichnis in Zielordner
+  cp -R $MDT_TEMPLATES/basic/res $CURRENT_DIR/html/res
+
+  # Generiere die HTML-Ausgabedateien mit pandoc
 	for i in $( ls $CURRENT_DIR/docs/*.md ); do
 		FILENAME=$(basename $i .md)
 		$PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/pandoc.css" $i -o "$CURRENT_DIR/html/$FILENAME.html"
 		echo "   Compile: $i - RES: $?"
   done
-	
+
 	echo
   # Pascal Hertleif is author of pandoc.css: thanx for puplishing!
   # $PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/pandoc.css" $CURRENT_DIR/docs/$1 -o "$CURRENT_DIR/html/`basename $1`.html"

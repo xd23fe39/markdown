@@ -7,7 +7,7 @@ finden Sie auf der [Markdown-Homepage][Markdown] oder in deutscher Sprache auf
 
 * * *
 
-Markdown Basic Template
+Markdown-HELPER Basic Template
 ===============================
 ![Image-Alternate-Text][Logo]
 
