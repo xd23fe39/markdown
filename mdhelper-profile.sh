@@ -3,7 +3,7 @@
 ####################################################
 
 # Settings
-COMMAND_NAME="markdown-helper.sh"
+COMMAND_NAME="mdhelper.sh"
 COMMAND_ALIAS="mdhelper"
 
 # Try to set up COMMAND_HOME
