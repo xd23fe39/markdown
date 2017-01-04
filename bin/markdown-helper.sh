@@ -54,8 +54,16 @@ function priv_usage {
 function priv_build {
   echo; echo "Build HTML Output:"
   priv_dirinfo
+	
+	for i in $( ls $CURRENT_DIR/docs/*.md ); do
+		FILENAME=$(basename $i .md)
+		$PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/pandoc.css" $i -o "$CURRENT_DIR/html/$FILENAME.html"
+		echo "   Compile: $i - RES: $?"
+  done
+	
+	echo
   # Pascal Hertleif is author of pandoc.css: thanx for puplishing!
-  $PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/pandoc.css" $1 -o "$CURRENT_DIR/html/`basename $1`.html"
+  # $PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/pandoc.css" $CURRENT_DIR/docs/$1 -o "$CURRENT_DIR/html/`basename $1`.html"
 }
 
 #####################################################################
