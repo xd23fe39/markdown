@@ -27,16 +27,26 @@ MDT_TEMPLATES="$BASEDIR/templates"
 function priv_dirinfo {
   echo
   echo "   Current directory: $CURRENT_DIR"
-  echo "          Script Dir: $SCRIPT_DIR"
+  echo "     Pandoc compiler: $PANDOC_BIN"
   echo
 }
 
 function priv_init {
   echo; echo "Initialize current directory:"
   priv_dirinfo
-  cp -R $MDT_TEMPLATES/basic/* $CURRENT_DIR
-  cp -R $MDT_TEMPLATES/basic/res $CURRENT_DIR/docs/res
-  cp -R $MDT_TEMPLATES/basic/res $CURRENT_DIR/html/res
+  if [ ! -d "$CURRENT_DIR/.mdhelper" ]; then
+    mkdir $CURRENT_DIR/.mdhelper
+  fi
+  if [ ! -d "$CURRENT_DIR/docs" ]; then
+    mkdir $CURRENT_DIR/docs
+  fi
+  if [ ! -d "$CURRENT_DIR/html" ]; then
+    mkdir $CURRENT_DIR/html
+  fi
+  cp -R $MDT_TEMPLATES/basic/docs $CURRENT_DIR
+  cp -R $MDT_TEMPLATES/res $CURRENT_DIR/docs/res
+  cp -R $MDT_TEMPLATES/res $CURRENT_DIR/html/res
+  cp -R $MDT_TEMPLATES/stylesheets/* $CURRENT_DIR/html
   cp -R $MDT_TEMPLATES/basic/.gitignore $CURRENT_DIR/
   echo; echo "Completed!"
   exit 0
@@ -55,16 +65,18 @@ function priv_usage {
 }
 
 function priv_build {
+
+  # STYLE_NAME="pandoc.css"
+  STYLE_NAME="github-pandoc.css"
+
+
   echo; echo "Build HTML Output:"
   priv_dirinfo
-
-  # Kopiere zentrales Ressource-Verzeichnis in Zielordner
-  cp -R $MDT_TEMPLATES/basic/res $CURRENT_DIR/html/res
 
   # Generiere die HTML-Ausgabedateien mit pandoc
 	for i in $( ls $CURRENT_DIR/docs/*.md ); do
 		FILENAME=$(basename $i .md)
-		$PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/pandoc.css" $i -o "$CURRENT_DIR/html/$FILENAME.html"
+		$PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/$STYLE_NAME" $i -o "$CURRENT_DIR/html/$FILENAME.html"
 		echo "   Compile: $i - RES: $?"
   done
 
