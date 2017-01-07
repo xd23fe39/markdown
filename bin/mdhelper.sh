@@ -73,6 +73,19 @@ function priv_build {
   # $PANDOC_BIN -s -S --toc -c "$CURRENT_DIR/html/pandoc.css" $CURRENT_DIR/docs/$1 -o "$CURRENT_DIR/html/`basename $1`.html"
 }
 
+function priv_initcheck {
+  PANDOC_BIN="`which pandoc`"
+  echo; echo -n "Init checkup: "
+  if [ -x "$PANDOC_BIN" ]; then
+    export PANDOC_BIN
+  else
+    echo; echo "Converter PANDOC not available!";
+    exit 1
+  fi
+  echo "OK!"; echo
+  return 0
+}
+
 #####################################################################
 # MAIN Program
 COMMAND=$1
@@ -82,6 +95,7 @@ case "$COMMAND" in
     priv_init
     ;;
   build)
+    priv_initcheck
     priv_build $2 $3
     ;;
 	usage|help|*)
