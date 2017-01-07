@@ -1,18 +1,6 @@
 # .gitignore
 # Mardown-Helper
 html/*
-# Entwicklung
-[Bb]uild
-[Ll]og
-# Backup Dateien
+res/*
+*.pdf
 *.zip
-*.bak
-*.backup
-*.saved
-*.original
-# Deklaratives Ignorieren
-_*
-$*
-&*
-§*
-~*
